@@ -1,15 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    --body-color: #4D3C59;
+    --pink-color: #CCBBF2;
+    --purple-color: #7F75BF;
+    --salmon-color: #D9B0C6;
+    --bg-color: #65A6BF;
 }
 
 body {
     font-size: 18px;
     line-height: 1.5em;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: var(--bg-color);
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    color: var(--body-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2em;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--salmon-color);
+}
+
+a:hover {
+    color: var(--salmon-color);
 }
 
 body#about img {
