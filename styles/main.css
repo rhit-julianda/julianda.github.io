@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
     --vertical-space: 2rem;
@@ -14,7 +15,7 @@
 body {
     font-size: 18px;
     line-height: 1.5em;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
     color: var(--body-color);
@@ -23,6 +24,11 @@ body {
 h1, h2, h3 {
     line-height: 1.2em;
     font-family: 'DotGothic16', sans-serif;
+}
+
+#factButton {
+    background-color: var(--purple-color);
+    color: var(--body-color);
 }
 
 a {
@@ -48,14 +54,24 @@ body {
                          "nav   nav"
                          "main main"
                          "foot foot";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: auto auto 1fr auto;
+}
+
+#navList > li {
+    display: inline;
+    margin: 5px;
+}
+
+hr {
+    height: 5px;
+    background-color: var(--body-color);
 }
 
 @media screen and (min-width: 25em) {
     body {
-        grid-template-areas: "head head"
-                             "nav  main"
+        grid-template-areas: "head nav"
+                             "main  main"
                              "foot foot";
         grid-template-rows: auto 1fr auto;
     }
@@ -94,6 +110,10 @@ header, footer {
 
 header h1, footer h1 {
     margin: 0;
+}
+
+#funFact {
+    display: inline;
 }
 
 body#portfolio ul#portfolioItems {
